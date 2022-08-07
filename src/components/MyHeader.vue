@@ -1,6 +1,6 @@
 <template>
   <div class="headerContainer">
-    <h2>可视化展板-Echarts</h2>
+    <h2>数据可视化-Echarts</h2>
     <div class="data">
       当前时间: {{time.year}}年{{time.month}}月{{time.day}}日 - {{time.hour}}时{{time.minute}}分{{time.second}}秒
     </div>
@@ -35,7 +35,7 @@ export default {
       this.time.second = dayjs().second()
     }
   },
-  mounted () {
+  created () {
     this.timer = setInterval(() => {
       this.getTime()
     }, 1000)
@@ -47,7 +47,8 @@ export default {
 .headerContainer{
   position: relative;
   height: 1.25rem;
-  background: url(../assets/images/head_bg.png) no-repeat;
+  background: url(../assets/images/head_bg.png) no-repeat ;
+  background-size: 100% 100%;
   h2{
     color: #fff;
     font-size: .475rem;
