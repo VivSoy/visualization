@@ -1,6 +1,6 @@
 <template>
-  <div id="app">
-    <router-view/>
+  <div class="barChartContainer">
+
   </div>
 </template>
 
@@ -10,5 +10,6 @@ export default {
 }
 </script>
 
-<style lang="less" scoped>
+<style lang="less">
+
 </style>
